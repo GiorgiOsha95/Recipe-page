@@ -501,13 +501,41 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.bottom-0 {
+  bottom: 0px;
+}
 .flex {
   display: flex;
 }
 .table {
   display: table;
 }
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+.min-h-full {
+  min-height: 100%;
+}
+.max-w-\[480px\] {
+  max-width: 480px;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.attribution a {
+	color: #3e52a3;
+	--tw-text-opacity: 1;
+	color: rgb(62 82 163 / var(--tw-text-opacity));
 }
