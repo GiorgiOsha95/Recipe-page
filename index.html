@@ -10,13 +10,14 @@
 			href="./assets/images/favicon-32x32.png"
 		/>
 		<link rel="stylesheet" href="./assets/css/tailwind.css" />
+
 		<link
-			rel="fonts"
-			href="./assets/fonts/outfit/Outfit-VariableFont_wght.ttf"
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"
 		/>
 		<link
-			rel="fonts"
-			href="./assets/fonts/young-sans/YoungSans-VariableFont_wght.ttf"
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
 		/>
 
 		<title>Frontend Mentor | Recipe page</title>
@@ -36,21 +37,21 @@
 				/>
 				<section>
 					<header class="my-6">
-						<h1 class="text-5xl mb-6 font-bold text-gray-900 font-secondary">
+						<h1 class="text-5xl mb-6 font-bold text-gray-900 font-youngSerif">
 							Simple Omelette Recipe
 						</h1>
-						<p class="text-gray-600 font-primary text-md">
+						<p class="text-gray-600 font-outfit text-md">
 							An easy and quick dish, perfect for any meal. This classic
 							omelette combines beaten eggs cooked to perfection, optionally
 							filled with your choice of cheese, vegetables, or meats.
 						</p>
 					</header>
 					<section class="p-5 bg-rose-50 rounded-lg mb-6">
-						<h2 class="text-base font-bold mb-2 text-rose-800 font-primary">
+						<h2 class="text-base font-bold mb-2 text-rose-800 font-outfit">
 							Preparation time
 						</h2>
 						<ul
-							class="Preparation-time-list font-primary relative text-md [&>li]:before:absolute [&>li]:before:content-['•'] [&>li]:before:w-4 [&>li]:before:h-4 [&>li]:before:text-sm [&>li]:before:align-top [&>li]:before:left-0 list-inside text-gray-600 font-bold [&>li>span]:font-normal [&>li]:mb-2 [&>li]:before:ml-1.5 [&>li]:pl-8"
+							class="Preparation-time-list font-outfit relative text-md [&>li]:before:absolute [&>li]:before:content-['•'] [&>li]:before:w-4 [&>li]:before:h-4 [&>li]:before:text-sm [&>li]:before:align-top [&>li]:before:left-0 list-inside text-gray-600 font-bold [&>li>span]:font-normal [&>li]:mb-2 [&>li]:before:ml-1.5 [&>li]:pl-8"
 						>
 							<li>
 								Total:
@@ -76,11 +77,11 @@
 				</section>
 
 				<section class="border-b border-gray-100 pb-6 mb-6">
-					<h2 class="text-3xl mb-2 font-bold text-brown font-secondary">
+					<h2 class="text-3xl mb-2 font-bold text-brown font-youngSerif">
 						Ingredients
 					</h2>
 					<ul
-						class="list-inside text-md relative [&>li]:before:absolute [&>li]:before:left-0 text-gray-600 font-primary [&>li]:before:content-['•'] [&>li]:before:w-4 [&>li]:before:h-4 [&>li]:before:text-sm [&>li]:before:align-top [&>li]:mb-2 [&>li]:before:ml-1.5 [&>li]:pl-8"
+						class="list-inside text-md relative [&>li]:before:absolute [&>li]:before:left-0 text-gray-600 font-outfit [&>li]:before:content-['•'] [&>li]:before:w-4 [&>li]:before:h-4 [&>li]:before:text-sm [&>li]:before:align-top [&>li]:mb-2 [&>li]:before:ml-1.5 [&>li]:pl-8"
 					>
 						<li>2-3 large eggs</li>
 						<li>Salt, to taste</li>
@@ -93,11 +94,11 @@
 				</section>
 
 				<section class="pb-6 mb-6 border-b border-gray-100">
-					<h2 class="text-3xl mb-2 font-bold text-brown font-secondary">
+					<h2 class="text-3xl mb-2 font-bold text-brown font-youngSerif">
 						Instructions
 					</h2>
 					<ol
-						class="Instruction-list-style custom-counter list-none text-md font-primary list-inside text-gray-600 [&>li>span]:font-bold [&>li]:ml-1.5 [&>li]:pl-7 [&>li]:relative text-sm [&>li]:before:text-brown [&>li]:before:font-bold [&>li]:before:left-0 [&>li]:before:absolute [&>li]:before:w-4 [&>li]:before:h-4 [&>li]:mb-2"
+						class="Instruction-list-style custom-counter list-none text-md font-outfit list-inside text-gray-600 [&>li>span]:font-bold [&>li]:ml-1.5 [&>li]:pl-7 [&>li]:relative text-sm [&>li]:before:text-brown [&>li]:before:font-bold [&>li]:before:left-0 [&>li]:before:absolute [&>li]:before:w-4 [&>li]:before:h-4 [&>li]:mb-2"
 					>
 						<li>
 							<span>Beat the eggs:</span> In a bowl, beat the eggs with a pinch
@@ -131,15 +132,15 @@
 				</section>
 
 				<section>
-					<h2 class="text-3xl font-bold mb-2 text-brown font-secondary">
+					<h2 class="text-3xl font-bold mb-2 text-brown font-youngSerif">
 						Nutrition
 					</h2>
-					<p class="text-gray-600 mb-2 font-primary text-md">
+					<p class="text-gray-600 mb-2 font-outfit text-md">
 						The table below shows nutritional values per serving without the
 						additional fillings.
 					</p>
 					<ul
-						class="text-gray-600 text-md font-primary [&>li>span]:inline-block [&>li>span]:w-1/2 [&>li]:w-full [&>li]:py-3 [&>li]:border-b [&>li]:border-gray-100 [&>li]:px-7 [&>li>.nutritional-value]:font-bold last:[&>li]:border-b-0 [&>li>.nutritional-value]:text-brown"
+						class="text-gray-600 text-md font-outfit [&>li>span]:inline-block [&>li>span]:w-1/2 [&>li]:w-full [&>li]:py-3 [&>li]:border-b [&>li]:border-gray-100 [&>li]:px-7 [&>li>.nutritional-value]:font-bold last:[&>li]:border-b-0 [&>li>.nutritional-value]:text-brown"
 					>
 						<li>
 							<span>Calories:</span

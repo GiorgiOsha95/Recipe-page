@@ -2,21 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-	font-family: "YourFontName";
-	src: url("/assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
-		format("truetype");
-	font-weight: 100 900;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "YourFontName";
-	src: url("/assets/fonts/young-serif/YoungSerif-Regular.ttf")
-		format("truetype");
-	font-weight: 400;
-	font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
 
 .attribution {
 	@apply text-sm text-center;

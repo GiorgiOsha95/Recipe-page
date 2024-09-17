@@ -5,10 +5,10 @@ module.exports = {
 		screens: {
 			md: "768px",
 		},
-		fontFamily: {
-			primary: ["Outfit", "sans-serif"],
-			secondary: ["Young Serif", "serif"],
-		},
+    fontFamily: {
+      youngSerif: ['Young Serif'],
+      outfit: ['Outfit'],
+    },
     fontSize: {
       sm: "0.75rem",
       md: ["14px", "150%"],
