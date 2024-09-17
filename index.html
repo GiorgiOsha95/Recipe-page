@@ -10,41 +10,78 @@
 			href="./assets/images/favicon-32x32.png"
 		/>
 		<link rel="stylesheet" href="./assets/css/tailwind.css" />
+		<link
+			rel="fonts"
+			href="./assets/fonts/outfit/Outfit-VariableFont_wght.ttf"
+		/>
+		<link
+			rel="fonts"
+			href="./assets/fonts/young-sans/YoungSans-VariableFont_wght.ttf"
+		/>
 
 		<title>Frontend Mentor | Recipe page</title>
 	</head>
 	<body>
-		<main class="flex items-center justify-center min-h-full relative">
-			<article class="max-w-[650px]">
+		<main
+			class="md:flex items-center justify-center min-h-full bg-gray-100 relative md:py-[20vh]"
+		>
+			<article
+				class="md:max-w-[650px] mb-10 md:mb-0 md:p-8 md:rounded-xl bg-white [&>section]:mx-8 [&>section]:md:mx-0"
+			>
+				<img
+					src="./assets/images/image-omelette.jpeg"
+					alt="A delicious omelette on a plate"
+					loading="lazy"
+					class="md:rounded-lg object-cover w-full"
+				/>
 				<section>
-					<img
-						src="./assets/images/image-omelette.jpeg"
-						alt="A delicious omelette on a plate"
-						loading="lazy"
-					/>
-					<header>
-						<h1>Simple Omelette Recipe</h1>
-						<p>
+					<header class="my-6">
+						<h1 class="text-5xl mb-6 font-bold text-gray-900 font-secondary">
+							Simple Omelette Recipe
+						</h1>
+						<p class="text-gray-600 font-primary text-md">
 							An easy and quick dish, perfect for any meal. This classic
 							omelette combines beaten eggs cooked to perfection, optionally
 							filled with your choice of cheese, vegetables, or meats.
 						</p>
 					</header>
-					<section>
-						<h2>Preparation time</h2>
-						<ul>
+					<section class="p-5 bg-rose-50 rounded-lg mb-6">
+						<h2 class="text-base font-bold mb-2 text-rose-800 font-primary">
+							Preparation time
+						</h2>
+						<ul
+							class="Preparation-time-list font-primary relative text-md [&>li]:before:absolute [&>li]:before:content-['•'] [&>li]:before:w-4 [&>li]:before:h-4 [&>li]:before:text-sm [&>li]:before:align-top [&>li]:before:left-0 list-inside text-gray-600 font-bold [&>li>span]:font-normal [&>li]:mb-2 [&>li]:before:ml-1.5 [&>li]:pl-8"
+						>
 							<li>
-								Total: <time datetime="PT10M">Approximately 10 minutes</time>
+								Total:
+								<span>
+									<time datetime="PT10M">Approximately 10 minutes</time>
+								</span>
 							</li>
-							<li>Preparation: <time datetime="PT5M">5 minutes</time></li>
-							<li>Cooking: <time datetime="PT5M">5 minutes</time></li>
+							<li>
+								Preparation:
+								<span>
+									<time datetime="PT5M">5 minutes</time>
+								</span>
+							</li>
+
+							<li>
+								Cooking:
+								<span>
+									<time datetime="PT5M">5 minutes</time>
+								</span>
+							</li>
 						</ul>
 					</section>
 				</section>
 
-				<section>
-					<h2>Ingredients</h2>
-					<ul>
+				<section class="border-b border-gray-100 pb-6 mb-6">
+					<h2 class="text-3xl mb-2 font-bold text-brown font-secondary">
+						Ingredients
+					</h2>
+					<ul
+						class="list-inside text-md relative [&>li]:before:absolute [&>li]:before:left-0 text-gray-600 font-primary [&>li]:before:content-['•'] [&>li]:before:w-4 [&>li]:before:h-4 [&>li]:before:text-sm [&>li]:before:align-top [&>li]:mb-2 [&>li]:before:ml-1.5 [&>li]:pl-8"
+					>
 						<li>2-3 large eggs</li>
 						<li>Salt, to taste</li>
 						<li>Pepper, to taste</li>
@@ -55,54 +92,74 @@
 					</ul>
 				</section>
 
-				<section>
-					<h2>Instructions</h2>
-					<ol>
+				<section class="pb-6 mb-6 border-b border-gray-100">
+					<h2 class="text-3xl mb-2 font-bold text-brown font-secondary">
+						Instructions
+					</h2>
+					<ol
+						class="Instruction-list-style custom-counter list-none text-md font-primary list-inside text-gray-600 [&>li>span]:font-bold [&>li]:ml-1.5 [&>li]:pl-7 [&>li]:relative text-sm [&>li]:before:text-brown [&>li]:before:font-bold [&>li]:before:left-0 [&>li]:before:absolute [&>li]:before:w-4 [&>li]:before:h-4 [&>li]:mb-2"
+					>
 						<li>
-							Beat the eggs: In a bowl, beat the eggs with a pinch of salt and
-							pepper until they are well mixed. You can add a tablespoon of
-							water or milk for a fluffier texture.
+							<span>Beat the eggs:</span> In a bowl, beat the eggs with a pinch
+							of salt and pepper until they are well mixed. You can add a
+							tablespoon of water or milk for a fluffier texture.
 						</li>
 						<li>
-							Heat the pan: Place a non-stick frying pan over medium heat and
-							add butter or oil.
+							<span>Heat the pan:</span> Place a non-stick frying pan over
+							medium heat and add butter or oil.
 						</li>
 						<li>
-							Cook the omelette: Once the butter is melted and bubbling, pour in
-							the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+							<span>Cook the omelette:</span> Once the butter is melted and
+							bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly
+							coat the surface.
 						</li>
 						<li>
-							Add fillings (optional): When the eggs begin to set at the edges
-							but are still slightly runny in the middle, sprinkle your chosen
-							fillings over one half of the omelette.
+							<span>Add fillings (optional):</span> When the eggs begin to set
+							at the edges but are still slightly runny in the middle, sprinkle
+							your chosen fillings over one half of the omelette.
 						</li>
 						<li>
-							Fold and serve: As the omelette continues to cook, carefully lift
-							one edge and fold it over the fillings. Let it cook for another
-							minute, then slide it onto a plate.
+							<span>Fold and serve:</span> As the omelette continues to cook,
+							carefully lift one edge and fold it over the fillings. Let it cook
+							for another minute, then slide it onto a plate.
 						</li>
 						<li>
-							Enjoy: Serve hot, with additional salt and pepper if needed.
+							<span>Enjoy:</span> Serve hot, with additional salt and pepper if
+							needed.
 						</li>
 					</ol>
 				</section>
 
 				<section>
-					<h2>Nutrition</h2>
-					<p>
+					<h2 class="text-3xl font-bold mb-2 text-brown font-secondary">
+						Nutrition
+					</h2>
+					<p class="text-gray-600 mb-2 font-primary text-md">
 						The table below shows nutritional values per serving without the
 						additional fillings.
 					</p>
-					<ul>
-						<li>Calories: 277kcal</li>
-						<li>Carbs: 0g</li>
-						<li>Protein: 20g</li>
-						<li>Fat: 22g</li>
+					<ul
+						class="text-gray-600 text-md font-primary [&>li>span]:inline-block [&>li>span]:w-1/2 [&>li]:w-full [&>li]:py-3 [&>li]:border-b [&>li]:border-gray-100 [&>li]:px-7 [&>li>.nutritional-value]:font-bold last:[&>li]:border-b-0 [&>li>.nutritional-value]:text-brown"
+					>
+						<li>
+							<span>Calories:</span
+							><span class="nutritional-value"> 277kcal</span>
+						</li>
+						<li>
+							<span>Carbs:</span><span class="nutritional-value">0g</span>
+						</li>
+						<li>
+							<span class="">Protein:</span
+							><span class="nutritional-value">20g</span>
+						</li>
+						<li><span>Fat:</span><span class="nutritional-value">22g</span></li>
 					</ul>
 				</section>
 			</article>
 
-			<footer class="attribution absolute bottom-0">
+			<footer
+				class="attribution fixed bottom-0 left-0 right-0 mx-auto bg-rose-50 text-brown [&>a]:text-gray-600 [&>a]:hover:text-rose-800 shadow-[0_-2px_8px_0_rgba(200,0,0,0.2)]"
+			>
 				Challenge by
 				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
 					>Frontend Mentor</a
